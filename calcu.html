@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js">
+
+     </script>
+     <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Student Grade Calculator</title>
+
+    <style>
+         body{
+        background-image:url(https://i.pinimg.com/736x/32/fc/24/32fc248a45c06b61b9c57e67fea8738a.jpg) ;
+        background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+      }
+
+    .bg{
+   background-color: rgb(255, 228, 185);
+    width: fit-content;
+    padding: 30px;
+    border: 5px dashed #ffc15d;
+    box-shadow: 2px 2px 15px rgb(229, 113, 26);
+    margin: 160px;
+
+    }
+
+
+    </style>
+</head>
+
+<nav class="navabar navbar-expand-md bg-warning navbar-black fixed-top">
+<div class="container-fluid">
+    <a class="navbar-brand" href="index.html" style="color: #e5711a;"></a>
+ </div>
+    
+ <div class="collapse navbar-collapse">
+    <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+         <a class="nav-link" href="index.html" style="color: #ffffff;">|Home⋆˚࿔ꕤ|</a>
+        </li>
+        <br>
+
+        <li class="nav-item">
+         <a class="nav-link" href="calcu.html" style="color: #ffffff;">|Calculate Your Grade˖𓂃.☘︎ ݁˖|</a>
+        </li>
+        <br>
+
+        <li class="nav-item">
+         <a class="nav-link" href="club.html" style="color: #FBFBFB;">|Clubs˖ ཐིཋྀ ᶻ𐰁 .ᐟ|</a>
+        </li>
+
+    </ul>
+   
+      <form class="d-flex">
+        <input class="form-control" text="text" placeholder="search...">
+        <button class="btn bg-secondary" type="button">Search</button>
+      </form>
+ </div>
+ </div>
+</nav>
+
+<body>
+    <center>
+    <div class="bg">
+    <h1 style="color: #f0690a;">Student Grade Calculator</h1>
+    <label style="color: #e88035;">First Name:</label><br><br>
+    <input type="text" id="first_name" placeholder="Enter your First Name..."><br>
+
+    <label style="color:#e88035 ;">Last Name:</label><br><br>
+<input type="text" id="last_name" placeholder="Enter your last name..."><br>
+
+  <label style="color: #e88035;">English:</label><br><br>
+<input type="number" id="eng" placeholder="Enter your grade..."><br>
+
+  <label style="color: #e88035;">Science:</label><br><br>
+<input type="number" id="sci" placeholder="Enter your grade..."><br>
+
+  <label style="color: #e88035;">ICT:</label><br><br>
+<input type="number" id="ict" placeholder="Enter your grade..."><br>
+
+  <label style="color: #e88035;">Math:</label><br><br>
+<input type="number" id="mat" placeholder="Enter your grade..."><br>
+
+  <label style="color: #e88035;">Filipino:</label><br><br>
+<input type="number" id="fil" placeholder="Enter your grade..."><br>
+
+  <label style="color: #e88035;">PE:</label><br><br>
+<input type="number" id="pe" placeholder="Enter your grade..."><br><br>
+
+<button id="gen_w_ave" py-click="gen_w_ave">Calculate GWA</button><br>
+<label style="color: #e88035;">Your GWA:</label><br><br>
+
+<div id="student_info"></div>
+<div id="summary"></div>
+<div id="output"></div>
+
+</div>
+</center>
+
+  <script type="py" src="main1.py"></script>
+
+
+    
+</body>
+</html>

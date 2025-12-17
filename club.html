@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js">
+
+     </script>
+     <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Skills test</title>
+    </head>
+    <style>
+      body{
+        background-image:url(https://i.pinimg.com/1200x/a5/93/9d/a5939da9520d03f7fe04cd14964d3e21.jpg) ;
+        background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+      }
+
+       .bg{
+    background-color: rgb(255, 228, 185);
+    width: fit-content;
+    padding: 30px;
+    border: 5px dashed #ffc15d;
+    box-shadow: 2px 2px 15px rgb(229, 113, 26);
+    margin: 160px;
+
+    }
+
+    .pre{
+    background-color: rgb(255, 228, 185);
+    width: fit-content;
+    padding: 30px;
+    border: 5px dashed #ffc15d;
+    box-shadow: 2px 2px 15px rgb(229, 113, 26);
+    margin: 160px;
+
+    }
+    </style>
+
+<nav class="navabar navbar-expand-md bg-warning navbar-black fixed-top">
+<div class="container-fluid">
+    <a class="navbar-brand" href="index.html" style="color: #e5711a;"></a>
+ </div>
+    
+ <div class="collapse navbar-collapse">
+    <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+         <a class="nav-link" href="index.html" style="color: #ffffff;">|Home⋆˚࿔ꕤ|</a>
+        </li>
+        <br>
+
+        <li class="nav-item">
+         <a class="nav-link" href="calcu.html" style="color: #ffffff;">|Calculate Your Grade˖𓂃.☘︎ ݁˖|</a>
+        </li>
+        <br>
+
+        <li class="nav-item">
+         <a class="nav-link" href="club.html" style="color: #FBFBFB;">|Clubs˖ ཐིཋྀ ᶻ𐰁 .ᐟ|</a>
+        </li>
+
+    </ul>
+   
+      <form class="d-flex">
+        <input class="form-control" text="text" placeholder="search...">
+        <button class="btn bg-secondary" type="button">Search</button>
+      </form>
+ </div>
+ </div>
+</nav>
+
+    <body>
+        <center>
+            <br><br>
+            <br><br>
+          <div class="bg">
+             <h1 style="color: #f0690a;">𓏲ּ𝄢⋆.˚🦋School Club Info🦋˚.𓏲ּ𝄢</h1>
+              </div>
+            <br><br>
+
+            <p> ˚˖🦋✧˚.Choose a Club ˚˖🦋✧˚.</p>
+            <br>
+        <select class="select from-control" id="select" required>
+            <option value="0">Choose a Club</option>
+            <option value="1">Communications Arts Club</option>
+            <option value="2">Science Club</option>
+            <option value="3">Math Club</option>
+            <option value="4">Social Science Club</option>
+            <option value="5">Marching Band</option>
+            <option value="6">COCC</option>
+            <option value="7">Glee Club</option>
+            <option value="8">Dance Club</option>
+            <option value="9">Volleyball Varsity</option>
+            <option value="10">Basketball Varsity</option>
+        </select>
+        <br><br>
+        
+
+        <button py-click ="club_info" class ="from-control" id="club_info">Show Club info</button>
+
+        <div class="pre">
+        <div class="outputs" id="info_output"></div>
+    </div>
+        </center>
+        
+        <script type="py" src="main2.py"></script>
+    </body>
+    </html>
